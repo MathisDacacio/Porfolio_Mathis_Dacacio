@@ -1,0 +1,179 @@
+/*!*************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[11].oneOf[7].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[11].oneOf[7].use[3]!./styles/experiences.module.css ***!
+  \*************************************************************************************************************************************************************************************************************************************************************************/
+.experiences_pageWrapper__baAdr {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    min-height: 100vh;
+    background-color: #1c1c1c; /* Fond sombre */
+    color: white;
+    position: relative;
+}
+
+.experiences_pageHeader__ejlyB {
+    position: relative;
+    top: 8%;
+    left: 0;
+    right: 0;
+    text-align: center;
+    padding-bottom: 2rem;
+}
+
+.experiences_pageTitle__P9RWN {
+    font-size: 4rem;
+    font-weight: bold;
+    color: #ffcc00; /* Couleur jaune/orange */
+    transition: all 0.5s ease;
+}
+
+.experiences_pageContent__MHgoU {
+    display: flex;
+    flex-grow: 1;
+    justify-content: center;
+    padding: 2rem;
+}
+
+.experiences_cardContainer__prbkS {
+    width: 75%;
+    margin: 0 auto;
+}
+
+.experiences_menuWrapper__9HgoH {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    position: fixed;
+    right: 2rem;
+    top: 25%;
+    background-color: #2e2e2e; /* Fond sombre pour le menu deroulant */
+    padding: 2rem;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+}
+
+.experiences_menuButton__zLOU0 {
+    padding: 1rem;
+    border-radius: 8px;
+    font-size: 1.2rem;
+    font-weight: 600;
+    text-align: center;
+    transition: all 0.3s ease;
+    background-color: #374151; /* Fond sombre pour les boutons */
+    color: #f3f4f6; /* Texte clair */
+    border: none;
+    cursor: pointer;
+}
+
+.experiences_menuButton__zLOU0:hover {
+    background-color: #475569; /* Couleur plus foncée au survol */
+}
+
+.experiences_active__t7yz5 {
+    background-color: #fbbf24; /* Couleur jaune/orange */
+    color: black;
+    border: 2px solid #fbbf24;
+    transition: all 0.3s ease;
+}
+
+.experiences_card__nxxK1 {
+    display: flex;
+    align-items: center;
+    background-color: #2e2e2e; /* Fond gris foncé des cartes */
+    border-radius: 1rem;
+    padding: 1.5rem;
+    width: 100%;
+    margin-bottom: 2rem;
+    position: relative;
+    transition: all 0.5s ease;
+}
+
+.experiences_cardWrapper__22k62 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.experiences_cardImageWrapper___49No {
+    width: 500px;
+    height: 500px;
+    border-radius: 1rem;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.experiences_cardImageWrapperRight__bnEKa {
+    width: 500px;
+    height: 500px;
+    border-radius: 1rem;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+    margin-left: 3rem;
+}
+
+.experiences_cardImageWrapper___49No:hover, .experiences_cardImageWrapperRight__bnEKa:hover {
+    transform: scale(1.05); /* Effet de zoom au survol */
+}
+
+.experiences_competences__stcGA {
+    font-size: 20px;
+    color: #86c865;
+}
+
+/* link */
+.experiences_link___jrgA {
+    color: #1e90ff;
+    font-size: 15px;
+}
+
+.experiences_linkRight__4p4F3 {
+    color: #1e90ff;
+    font-size: 15px;
+    display : flex;
+    justify-content: flex-end;
+}
+
+.experiences_link___jrgA:hover, .experiences_linkRight__4p4F3:hover {
+    color: #1e90ff;
+    text-decoration: underline;
+    font-size: 16px;
+}
+
+.experiences_cardImage__INIVb {
+    width: 100%;
+    height: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+}
+
+.experiences_cardTextWrapper__zmFfa {
+    flex: 1;
+    padding-left: 3rem;
+}
+
+.experiences_cardHeader__5ktj1 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.experiences_cardTitle__JSVTx {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: white; /* Texte des titres en blanc */
+    transition: all 0.3s ease;
+}
+
+.experiences_cardDuration__Ut1hW {
+    font-size: 1.5rem;
+    color: #9ca3af; /* Gris clair pour la durée */
+}
+
+.experiences_cardDescription__KPUpl {
+    font-size: 1.2rem;
+    color: #d1d5db; /* Gris clair pour la description */
+    line-height: 1.7;
+    margin-top: 1rem;
+}

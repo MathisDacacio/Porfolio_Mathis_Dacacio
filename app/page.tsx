@@ -1,109 +1,161 @@
-import Image from "next/image";
-import Footer from "./footer";
-import Header from "./header";
+
+/*
+
+  Compétences:
+    bouton en hidden
+    pour chaque compétence un projet avec: une photo/lien github/description du projet
+    - HTML
+    - CSS
+    - Javascript
+    - Node
+    - C
+    - PHP
+    - Python
+    - Java
+    - SQL
+    - React
+    - Réseau & Cybersécurité
+  
+  Home:
+    une div au centre de la page qui contient un contenu choisi a l'aide de bouton sur la droite de la page grace a des hidden
+    petite bio de moi + lien vers /contact a gauche de la page
+
+  Contact me:
+    github, linkedin, mail, telephone, CV
+
+  Expériences:
+    education: 
+      - Lycée Watteau
+      - Epitech
+      - Enigma School
+    stages & alternance:
+      - resto du coeur
+    CDI/CDD:
+      aucun
+
+
+*/
+"use client";
+import { useState } from "react";
+
+type SectionKey = "famille" | "animaux" | "jeux";
 
 export default function Home() {
-  return (
-    <div>
-      <Header />
-      <main className="flex min-h-screen flex-col items-center justify-between bg-black p-24 text-white">
+  const [activeSection, setActiveSection] = useState<SectionKey>("famille");
 
-        <div style={{textAlign: "center", fontSize: '20px'}}>
-          <br />
-          <p>Je m'appelle <span style={{color: '#FFFF00', fontSize: '28px'}}>Mathis Dacacio</span> je suis actuellement en 1er année à ENIGMA <a href="https://fr.wikipedia.org/wiki/Lille" style={{color: '#4682B4', fontSize: '23px'}} target="_blank">Lille</a>.</p>
-          <p>J'ai 19 ans et je suis passionné d'<a href="https://fr.wikipedia.org/wiki/Informatique" style={{color: '#4682B4', fontSize: '23px'}} target="_blank">informatique</a>.</p><br />
-        </div>
-
-        <Image
-              className="rounded-xl"
-              src="/Mathis_Dacacio.jpg"
-              alt="Photo de Mathis Dacacio"
-              width={300}
-              height={100}
-              priority
+  const sections: Record<SectionKey, JSX.Element> = {
+    famille: (
+      <div className="space-y-4">
+        <h2 className="text-2xl font-bold">Famille</h2>
+        <p>
+          Dans ma famille j'ai 2 grands frères. Le premier a 24 ans et c'est lui qui m'a fait découvrir League of Legends, il habite maintenant à Annecy (74). 
+          Mon autre grand frère a 27 ans, habite à Comelles, une petite commune entre Lyon et Annecy, et est depuis un peu plus d'un an papa. 
+          Par conséquent, je suis maintenant{" "}
+          <a
+            href="https://dictionnaire.lerobert.com/definition/oncle#:~:text=Fr%C3%A8re%20du%20p%C3%A8re%20ou%20de,%E2%9E%99%20tonton."
+            style={{ color: "#4682B4", fontSize: "23px" }}
+            target="_blank"
+          >
+            tonton
+          </a>
+          . Il s'appelle Manohé et il est trop trop chou.
+        </p>
+        <img
+          src="/Photo_famille.png"
+          alt="Famille"
+          className="rounded-md shadow-lg w-full h-auto"
         />
+      </div>
+    ),
+    animaux: (
+      <div className="space-y-4">
+        <h2 className="text-2xl font-bold">Animaux</h2>
+        <p>
+          J'aime les animaux, principalement les chiens, et plus précisément mon chien qui est absolument magnifique (oui, je suis gaga). 
+          Il est né le 27 août 2021, donc il a 2 ans et s'appelle Sun (c'était l'année des "S" et c'était son nom de base que nous avons gardé). 
+          C'est un mâle{" "}
+          <a
+            href="https://www.woopets.fr/chien/race/beagle-harrier/"
+            style={{ color: "#4682B4", fontSize: "23px" }}
+            target="_blank"
+          >
+            beagle Harrier
+          </a>
+          , un croisé entre un beagle très énergique et un Harrier, un chien de chasse. C'est donc un beagle plus grand, plus costaud et qui chasse.
+        </p>
+        <img
+          src="/Photo_sun.jpeg"
+          alt="Sun, mon chien"
+          className="rounded-md shadow-lg w-full h-auto"
+        />
+      </div>
+    ),
+    jeux: (
+      <div className="space-y-4">
+        <h2 className="text-2xl font-bold">Jeux</h2>
+        <p>
+          Comme beaucoup d'étudiants en informatique, je joue souvent aux jeux vidéo. 
+          Mon premier jeu, dès mes 8 ans, a été{" "}
+          <a
+            href="https://fr.wikipedia.org/wiki/League_of_Legends"
+            style={{ color: "#4682B4", fontSize: "23px" }}
+            target="_blank"
+          >
+            League of Legends
+          </a>
+          , auquel je joue toujours plus de 10 ans plus tard. En deuxième position, 
+          en termes d'heures de jeu et de chronologie, vient Minecraft, avec un pic d'activité important pendant le confinement. 
+          Rocket League et Fortnite sont deux jeux auxquels je joue de temps en temps, contrairement à PUBG, mais il reste dans mon top 5.
+        </p>
+        <img
+          src="/Photo_jeu.png"
+          alt="Jeux"
+          className="rounded-md shadow-lg w-full h-auto"
+        />
+      </div>
+    ),
+  };
 
-        <br /><br />
-        
-        <div style={{display: 'flex', flexDirection: 'column', alignItems: 'center'}}>
-        {/* Mes Compétences */}
-        <div style={{backgroundColor: '#808080', color: 'black', padding: '20px', borderRadius: '8px', boxShadow: '0 4px 6px rgba(0, 0, 0, 0.1)', textAlign: 'center', marginBottom: '20px', width: '100%'}}>
-          <div>
-            <h2 style={{margin: '0 0 20px 0', fontSize: '24px', fontWeight: 'bold', textDecoration: 'underline'}}>Mes Compétences</h2>
-            <br />
-            <p style={{margin: '0 0 20px 0' }}>J'ai des compétences en:</p>
-            <br />
-          </div>
-          <div style={{display: 'flex', justifyContent: 'space-between', width: '100%'}}>
-            <ul style={{listStyleType: 'none', padding: 0, margin: 0, width: '50%'}}>
-              <li>HTML</li><br />
-              <li>CSS</li><br />
-              <li>Javascript</li><br />
-              <li>Node</li><br />
-              <li>C</li><br />
-            </ul>
-            <ul style={{listStyleType: 'none', padding: 0, margin: 0, width: '50%'}}>
-              <li>Python</li><br />
-              <li>Java</li><br />
-              <li>SQL</li><br />
-              <li>React</li><br />
-              <li>Réseau & Cybersécurité</li><br />
-            </ul>
-          </div>
-        </div>
-
-        {/* Mes Soft skills */}
-        <div style={{backgroundColor: '#808080', color: 'black', padding: '20px', borderRadius: '8px', boxShadow: '0 4px 6px rgba(0, 0, 0, 0.1)', textAlign: 'center', marginBottom: '20px', width: '100%'}}>
-          <div>
-            <h2 style={{margin: '0 0 20px 0', fontSize: '24px', fontWeight: 'bold', textDecoration: 'underline'}}>Mes Soft skills</h2>
-            <br />
-          </div>
-          <div style={{display: 'flex', justifyContent: 'center', width: '100%'}}>
-            <ul style={{listStyleType: 'none', padding: 0, margin: 0}}>
-              <li>Autonome</li><br />
-              <li>Curieux</li><br />
-              <li>Rigoureux</li><br />
-              <li>Travail d'équipe</li><br />
-            </ul>
-          </div>
-        </div>
-
-        {/* Mes Langues */}
-        <div style={{backgroundColor: '#808080', color: 'black', padding: '20px', borderRadius: '8px', boxShadow: '0 4px 6px rgba(0, 0, 0, 0.1)', textAlign: 'center', marginBottom: '20px', width: '100%'}}>
-          <div>
-            <h2 style={{margin: '0 0 20px 0', fontSize: '24px', fontWeight: 'bold', textDecoration: 'underline'}}>Mes Langues</h2>
-            <br />
-          </div>
-          <div style={{display: 'flex', justifyContent: 'center', width: '100%'}}>
-            <ul style={{listStyleType: 'none', padding: 0, margin: 0}}>
-              <li>Français</li><br />
-              <li>Anglais(B1)</li><br />
-            </ul>
-          </div>
-        </div>
-
-        {/* Mon Parcours */}
-        <div style={{backgroundColor: '#808080', color: 'black', padding: '20px', borderRadius: '8px', boxShadow: '0 4px 6px rgba(0, 0, 0, 0.1)', textAlign: 'center', marginBottom: '20px', width: '100%'}}>
-          <div>
-            <h2 style={{margin: '0 0 20px 0', fontSize: '24px', fontWeight: 'bold', textDecoration: 'underline'}}>Mon Parcours</h2>
-            <br />
-          </div>
-          <div style={{display: 'flex', justifyContent: 'center'}}>
-            <ul style={{listStyleType: 'none', padding: 0, margin: 0}}>
-              <li>Lycée Watteau, Diplômmée en 2022 - Mention “Assez bien”</li><br />
-              <li>Epitech première année - 2022/2023</li><br />
-              <li>Enigma School - 2023/2028</li><br />
-            </ul>
-          </div>
-        </div>
+  return (
+    <div className="flex h-screen bg-bodyColor text-white">
+      {/* Contenu central défilable */}
+      <div className="flex-grow p-8">
+        <div className="max-w-3xl mx-auto">{sections[activeSection]}</div>
       </div>
 
-      <a href="/DACACIO_Mathis.pdf" target="_blank">
-      <button className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300">
-      Télécharger mon CV</button></a>
-      
-      </main>
-      <Footer />
+      {/* Boutons à droite */}
+      <aside className="flex flex-col space-y-4 fixed right-4 top-1/4 bg-white shadow-lg rounded-md p-4">
+        <button
+          onClick={() => setActiveSection("famille")}
+          className={`p-3 rounded-md flex items-center justify-center transition-all duration-300 ${
+            activeSection === "famille"
+              ? "bg-blue-500 text-white"
+              : "bg-gray-100 hover:bg-gray-200"
+          }`}
+        >
+          Famille
+        </button>
+        <button
+          onClick={() => setActiveSection("animaux")}
+          className={`p-3 rounded-md flex items-center justify-center transition-all duration-300 ${
+            activeSection === "animaux"
+              ? "bg-blue-500 text-white"
+              : "bg-gray-100 hover:bg-gray-200"
+          }`}
+        >
+          Animaux
+        </button>
+        <button
+          onClick={() => setActiveSection("jeux")}
+          className={`p-3 rounded-md flex items-center justify-center transition-all duration-300 ${
+            activeSection === "jeux"
+              ? "bg-blue-500 text-white"
+              : "bg-gray-100 hover:bg-gray-200"
+          }`}
+        >
+          Jeux
+        </button>
+      </aside>
     </div>
   );
 }
