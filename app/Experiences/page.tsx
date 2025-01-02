@@ -1,6 +1,6 @@
 "use client";
 import { useState } from "react";
-import styles from "@/styles/experiences.module.css";
+import styles from "./../../styles/experiences.module.css";
 
 type SectionKey = "education" | "stages" | "cdi";
 

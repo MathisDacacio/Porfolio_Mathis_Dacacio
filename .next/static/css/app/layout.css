@@ -609,23 +609,14 @@ video {
 .right-4 {
   right: 1rem;
 }
+.right-6 {
+  right: 1.5rem;
+}
 .top-1\/4 {
   top: 25%;
 }
 .top-4 {
   top: 1rem;
-}
-.bottom-0 {
-  bottom: 0px;
-}
-.left-0 {
-  left: 0px;
-}
-.bottom-\[12\.5em\] {
-  bottom: 12.5em;
-}
-.right-6 {
-  right: 1.5rem;
 }
 .m-0 {
   margin: 0px;
@@ -825,9 +816,6 @@ video {
 }
 .p-8 {
   padding: 2rem;
-}
-.p-1 {
-  padding: 0.25rem;
 }
 .px-5 {
   padding-left: 1.25rem;

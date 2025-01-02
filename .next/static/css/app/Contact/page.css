@@ -1,0 +1,150 @@
+/*!*********************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[11].oneOf[7].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[11].oneOf[7].use[3]!./styles/contact.module.css ***!
+  \*********************************************************************************************************************************************************************************************************************************************************************/
+/* Conteneur principal */
+.contact_container__V_2rE {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #1c1c1c;
+  color: white;
+  min-height: 100vh;
+  padding: 2rem;
+}
+
+/* Section principale */
+.contact_main___KJxm {
+  width: 50%;
+  padding: 2rem;
+}
+
+/* Conteneur de la grille */
+.contact_grid__AXexp {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 3rem;
+  width: 100%;
+  margin-bottom: 6rem;
+}
+
+/* Cartes */
+.contact_card__zjW23 {
+  background-color: #2e2e2e;
+  padding: 1.5rem;
+  border-radius: 0.5rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+  min-height: 250px;
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+.contact_card__zjW23:hover {
+  background-color: #3a3a3a;
+  transform: translateY(-5px);
+}
+
+/* Titres */
+.contact_title__3ckDM {
+  font-size: 1.875rem;
+  font-weight: bold;
+  color: #ffcc00;
+}
+
+/* Texte */
+.contact_text__Q52MN {
+  margin-top: 1rem;
+  font-size: 1.25rem;
+}
+
+.contact_link__qb0eZ {
+  color: #1e90ff;
+  text-decoration: underline;
+  margin-top: 1rem;
+  font-size: 1.25rem;
+  transition: color 0.3s;
+}
+
+.contact_link__qb0eZ:hover {
+  color: #4682b4;
+}
+
+.contact_phone__JNOIE {
+  color: #1e90ff;
+  font-size: 1.25rem;
+}
+
+/* Formulaire Feedback */
+.contact_form__8DoQO {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  background-color: #2e2e2e;
+  border-radius: 0.5rem;
+  padding: 2rem;
+  width: 60%;
+  margin: 0 auto;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+  position: relative;
+}
+
+.contact_label__fkiZc {
+  font-size: 1.25rem;
+  margin-bottom: 0.5rem;
+}
+
+.contact_input__mykbS,
+.contact_textarea__tnXig {
+  width: 100%;
+  padding: 0.5rem;
+  background-color: #2d2d2d;
+  border: 1px solid #555;
+  border-radius: 0.5rem;
+  font-size: 1rem;
+  color: white;
+  outline: none;
+}
+
+.contact_input__mykbS:focus,
+.contact_textarea__tnXig:focus {
+  border-color: #ffcc00;
+  box-shadow: 0 0 0 2px #ffcc00;
+}
+
+.contact_textarea__tnXig {
+  height: 4rem;
+  resize: none;
+}
+
+/* Boutons */
+.contact_buttonContainer__8HSaB {
+  display: flex;
+  justify-content: center;
+}
+
+.contact_button__yRS1B {
+  padding: 0.5rem 1.5rem;
+  border-radius: 0.5rem;
+  background-color: #1e90ff;
+  color: white;
+  font-size: 1.25rem;
+  transition: background-color 0.3s;
+}
+
+.contact_button__yRS1B:hover {
+  background-color: #4682b4;
+}
+
+.contact_buttonDisabled__pbUaH {
+  background-color: #555;
+  cursor: not-allowed;
+}
+
+
+/* Bandeau */
+.contact_bandeau__CmCRU {
+  height: 25rem;
+  width: 70vw;
+}
