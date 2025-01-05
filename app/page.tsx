@@ -38,18 +38,39 @@
 "use client";
 import { useState } from "react";
 
-type SectionKey = "famille" | "animaux" | "jeux";
+type SectionKey = "actu" | "famille" | "animaux" | "jeux";
 
 export default function Home() {
-  const [activeSection, setActiveSection] = useState<SectionKey>("famille");
+  const [activeSection, setActiveSection] = useState<SectionKey>("actu");
 
   const sections: Record<SectionKey, JSX.Element> = {
+    actu: (
+      <div className="space-y-4">
+        <h2 className="text-2xl font-bold">Actualité</h2>
+        <p>
+        Je m'appelle Mathis Dacacio j'ai 19 ans et je suis étudiant en 2eme année à {" "}
+          <a
+            href="https://www.enigma-school.com/"
+            style={{ color: "#4682B4", fontSize: "23px" }}
+            target="_blank"
+          >
+            ENIGMA School
+          </a>
+          . Je suis à la recherche d'un stage en tant que développeur Web de 2 à 3 mois à partir de juin 2025 pouvant aboutir sur une alternance de 12 mois lors de l’année 2025/2026. Et ce dans l'objectif de mettre à profit mes compétences acquises.
+        </p>
+        <img
+          src="/Mathis_Dacacio.jpg"
+          alt="Mathis Dacacio"
+          className="rounded-md shadow-lg w-full h-auto"
+        />
+      </div>
+    ),
     famille: (
       <div className="space-y-4">
         <h2 className="text-2xl font-bold">Famille</h2>
         <p>
-          Dans ma famille j'ai 2 grands frères. Le premier a 24 ans et c'est lui qui m'a fait découvrir League of Legends, il habite maintenant à Annecy (74). 
-          Mon autre grand frère a 27 ans, habite à Comelles, une petite commune entre Lyon et Annecy, et est depuis un peu plus d'un an papa. 
+          Dans ma famille j'ai 2 grands frères. Le premier a 25 ans, il habite maintenant à Annecy (74). 
+          Mon autre grand frère a 28 ans, habite à Comelles, une petite commune entre Lyon et Annecy, et est depuis deux ans il est papa. 
           Par conséquent, je suis maintenant{" "}
           <a
             href="https://dictionnaire.lerobert.com/definition/oncle#:~:text=Fr%C3%A8re%20du%20p%C3%A8re%20ou%20de,%E2%9E%99%20tonton."
@@ -72,7 +93,7 @@ export default function Home() {
         <h2 className="text-2xl font-bold">Animaux</h2>
         <p>
           J'aime les animaux, principalement les chiens, et plus précisément mon chien qui est absolument magnifique (oui, je suis gaga). 
-          Il est né le 27 août 2021, donc il a 2 ans et s'appelle Sun (c'était l'année des "S" et c'était son nom de base que nous avons gardé). 
+          Il est né le 27 août 2021, donc il a 3 ans et s'appelle Sun (c'était l'année des "S" et c'était son nom de base que nous avons gardé). 
           C'est un mâle{" "}
           <a
             href="https://www.woopets.fr/chien/race/beagle-harrier/"
@@ -105,7 +126,7 @@ export default function Home() {
           </a>
           , auquel je joue toujours plus de 10 ans plus tard. En deuxième position, 
           en termes d'heures de jeu et de chronologie, vient Minecraft, avec un pic d'activité important pendant le confinement. 
-          Rocket League et Fortnite sont deux jeux auxquels je joue de temps en temps, contrairement à PUBG, mais il reste dans mon top 5.
+          Rocket League et Fortnite sont deux jeux auxquels je joue de temps en temps, tout comme PUBG qui complète mon top 5.
         </p>
         <img
           src="/Photo_jeu.png"
@@ -125,6 +146,16 @@ export default function Home() {
 
       {/* Boutons à droite */}
       <aside className="flex flex-col space-y-4 fixed right-4 top-1/4 bg-white shadow-lg rounded-md p-4">
+      <button
+          onClick={() => setActiveSection("actu")}
+          className={`p-3 rounded-md flex items-center justify-center transition-all duration-300 ${
+            activeSection === "actu"
+              ? "bg-blue-500 text-white"
+              : "bg-gray-100 hover:bg-gray-200"
+          }`}
+        >
+          Actualité
+        </button>
         <button
           onClick={() => setActiveSection("famille")}
           className={`p-3 rounded-md flex items-center justify-center transition-all duration-300 ${
