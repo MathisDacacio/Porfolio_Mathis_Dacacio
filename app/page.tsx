@@ -62,6 +62,8 @@ export default function Home() {
           src="/Mathis_Dacacio.jpg"
           alt="Mathis Dacacio"
           className="rounded-md shadow-lg w-full h-auto"
+          height={150}
+          width={150}
         />
       </div>
     ),
