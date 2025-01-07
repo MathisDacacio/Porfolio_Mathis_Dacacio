@@ -1,0 +1,71 @@
+/*!*********************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[11].oneOf[7].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[11].oneOf[7].use[3]!./styles/aboutme.module.css ***!
+  \*********************************************************************************************************************************************************************************************************************************************************************/
+.aboutme_menuWrapper__kdQfH {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    position: fixed;
+    right: 2rem;
+    top: 25%;
+    background-color: #2e2e2e; /* Fond sombre pour le menu deroulant */
+    padding: 2rem;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+}
+
+.aboutme_menuButton__UQfJ_ {
+    padding: 1rem;
+    border-radius: 8px;
+    font-size: 1.2rem;
+    font-weight: 600;
+    text-align: center;
+    transition: all 0.3s ease;
+    background-color: #374151; /* Fond sombre pour les boutons */
+    color: #f3f4f6; /* Texte clair */
+    border: none;
+    cursor: pointer;
+}
+
+.aboutme_menuButton__UQfJ_:hover {
+    background-color: #475569; /* Couleur plus foncée au survol */
+}
+
+.aboutme_active__uxpxl {
+    background-color: #fbbf24;
+    color: black;
+    border: 2px solid #fbbf24;
+    transition: all 0.3s ease;
+}
+
+.aboutme_pageWrapper__LGbXW {
+    flex-direction: column;
+    width: 100%;
+    min-height: 100vh;
+    background-color: #1c1c1c; /* Fond sombre */
+    color: white;
+    position: relative;
+}
+
+.aboutme_pageTitle__DMNvx {
+    display: flex;
+    justify-content: center;
+    font-size: 3rem;
+    font-weight: bold;
+    color: #ffcc00; /* Couleur jaune/orange */
+}
+
+.aboutme_imageStyle__wI1rP {
+    border-radius: 1rem;
+}
+
+.aboutme_contentdiv__sDBxP {
+    font-size: 1.2rem;
+}
+
+.aboutme_linkStyle__I_gK1 {
+    color: #1e90ff;
+    font-size: 29px;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}

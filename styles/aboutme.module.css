@@ -1,0 +1,68 @@
+.menuWrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    position: fixed;
+    right: 2rem;
+    top: 25%;
+    background-color: #2e2e2e; /* Fond sombre pour le menu deroulant */
+    padding: 2rem;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+}
+
+.menuButton {
+    padding: 1rem;
+    border-radius: 8px;
+    font-size: 1.2rem;
+    font-weight: 600;
+    text-align: center;
+    transition: all 0.3s ease;
+    background-color: #374151; /* Fond sombre pour les boutons */
+    color: #f3f4f6; /* Texte clair */
+    border: none;
+    cursor: pointer;
+}
+
+.menuButton:hover {
+    background-color: #475569; /* Couleur plus foncée au survol */
+}
+
+.active {
+    background-color: #fbbf24;
+    color: black;
+    border: 2px solid #fbbf24;
+    transition: all 0.3s ease;
+}
+
+.pageWrapper {
+    flex-direction: column;
+    width: 100%;
+    min-height: 100vh;
+    background-color: #1c1c1c; /* Fond sombre */
+    color: white;
+    position: relative;
+}
+
+.pageTitle {
+    display: flex;
+    justify-content: center;
+    font-size: 3rem;
+    font-weight: bold;
+    color: #ffcc00; /* Couleur jaune/orange */
+}
+
+.imageStyle {
+    border-radius: 1rem;
+}
+
+.contentdiv {
+    font-size: 1.2rem;
+}
+
+.linkStyle {
+    color: #1e90ff;
+    font-size: 29px;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
