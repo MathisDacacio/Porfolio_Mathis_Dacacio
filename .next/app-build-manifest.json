@@ -6,28 +6,16 @@
       "static/css/app/layout.css",
       "static/chunks/app/layout.js"
     ],
-    "/Contact/page": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/css/app/Contact/page.css",
-      "static/chunks/app/Contact/page.js"
-    ],
-    "/Experiences/page": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/css/app/Experiences/page.css",
-      "static/chunks/app/Experiences/page.js"
-    ],
-    "/page": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/css/app/page.css",
-      "static/chunks/app/page.js"
-    ],
     "/Competences/page": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
+      "static/css/app/Competences/page.css",
       "static/chunks/app/Competences/page.js"
+    ],
+    "/not-found": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/chunks/app/not-found.js"
     ]
   }
 }

@@ -41,7 +41,7 @@
     flex-direction: column;
     gap: 1.5rem;
     position: fixed;
-    right: 2rem;
+    right: 1rem;
     top: 25%;
     background-color: #2e2e2e; /* Fond sombre pour le menu deroulant */
     padding: 2rem;

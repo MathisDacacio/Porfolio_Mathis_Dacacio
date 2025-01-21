@@ -40,7 +40,7 @@ export default function Home() {
         <p>
           Dans ma famille j'ai 2 grands frères. Le premier a 25 ans, il habite maintenant à Annecy (74). 
           Mon autre grand frère a 28 ans, habite à Comelles, une petite commune entre Lyon et Annecy, et est depuis deux ans il est papa. 
-          Par conséquent, je suis maintenant{" "}
+          Par conséquent, je suis maintenant {" "}
           <a
             href="https://dictionnaire.lerobert.com/definition/oncle#:~:text=Fr%C3%A8re%20du%20p%C3%A8re%20ou%20de,%E2%9E%99%20tonton."
             className={styles.linkStyle}
@@ -65,7 +65,7 @@ export default function Home() {
         <p>
           J'aime les animaux, principalement les chiens, et plus précisément mon chien qui est absolument magnifique (oui, je suis gaga). 
           Il est né le 27 août 2021, donc il a 3 ans et s'appelle Sun (c'était l'année des "S" et c'était son nom de base que nous avons gardé). 
-          C'est un mâle{" "}
+          C'est un mâle {" "}
           <a
             href="https://www.woopets.fr/chien/race/beagle-harrier/"
             className={styles.linkStyle}
@@ -89,7 +89,7 @@ export default function Home() {
         <br />
         <p>
           Comme beaucoup d'étudiants en informatique, je joue souvent aux jeux vidéo. 
-          Mon premier jeu, dès mes 8 ans, a été{" "}
+          Mon premier jeu, dès mes 8 ans, a été {" "}
           <a
             href="https://fr.wikipedia.org/wiki/League_of_Legends"
             className={styles.linkStyle}
